@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebLaunch Local | High-End Web Design for Local Businesses</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Core Stylesheet Link -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Direct Font Awesome Icon CDN to fix broken layout icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -17,29 +20,29 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <span class="badge">Web Design & Local SEO</span>
-            <h1>We Build Websites That Get Tradesmen & Local Services Booked.</h1>
-            <p class="lead">No confusing tech talk. No expensive monthly contracts. Just a stunning, high-converting website optimized to bring you customers from your local area.</p>
-            <div class="hero-ctas">
-                <a href="contact.html" class="cta-btn">Check Availability</a>
-                <a href="samples.html" class="sec-btn">View Our Package</a>
+    <main style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
+        <section class="hero" style="text-align: center; padding: 4rem 1rem;">
+            <span class="badge" style="background: #eff6ff; color: #3b82f6; padding: 0.5rem 1rem; border-radius: 20px; font-weight: bold; font-size: 0.85rem;">Web Design & Local SEO</span>
+            <h1 style="font-size: 3rem; color: #0f172a; margin-top: 1.5rem; margin-bottom: 1.5rem; line-height: 1.2;">We Build Websites That Get Tradesmen & Local Services Booked.</h1>
+            <p class="lead" style="font-size: 1.25rem; color: #475569; max-width: 700px; margin: 0 auto 2.5rem auto; line-height: 1.6;">No confusing tech talk. No expensive monthly contracts. Just a stunning, high-converting website optimized to bring you customers from your local area.</p>
+            <div class="hero-ctas" style="display: flex; gap: 1rem; justify-content: center; align-items: center;">
+                <a href="contact.html" class="cta-btn" style="background: #3b82f6; color: white; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">Check Availability</a>
+                <a href="samples.html" class="sec-btn" style="background: transparent; color: #475569; border: 1px solid #cbd5e1; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: bold;">View Our Package</a>
             </div>
         </section>
 
-        <section class="features-summary">
-            <div class="summary-card">
-                <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
-                <h3>The Complete Local Package</h3>
-                <p>A premium 4-page website built entirely for your business. Includes everything you need to launch, get found on Google, and look incredibly professional.</p>
-                <p class="price-tag">£290 <span class="price-sub">one-off fee</span></p>
-                <a href="samples.html" class="text-link">See what's included <i class="fa-solid fa-arrow-right"></i></a>
+        <section class="features-summary" style="margin-top: 2rem; display: flex; justify-content: center;">
+            <div class="summary-card" style="background: white; border: 1px solid #e2e8f0; border-top: 4px solid #3b82f6; border-radius: 12px; padding: 2.5rem; max-width: 550px; text-align: center; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);">
+                <div class="icon-box" style="background: #eff6ff; color: #3b82f6; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; font-size: 1.5rem;"><i class="fa-solid fa-bolt"></i></div>
+                <h3 style="font-size: 1.5rem; color: #0f172a; margin-bottom: 1rem;">The Complete Local Package</h3>
+                <p style="color: #64748b; line-height: 1.6; margin-bottom: 1.5rem;">A premium 4-page website built entirely for your business. Includes everything you need to launch, get found on Google, and look incredibly professional.</p>
+                <p class="price-tag" style="font-size: 2.5rem; font-weight: bold; color: #0f172a; margin-bottom: 1.5rem;">£290 <span class="price-sub" style="font-size: 1rem; color: #64748b; font-weight: normal;">one-off fee</span></p>
+                <a href="samples.html" class="text-link" style="color: #3b82f6; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 0.5rem;">See what's included <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer style="text-align: center; padding: 3rem 1rem; color: #64748b; border-top: 1px solid #e2e8f0; margin-top: 4rem;">
         <p>© 2026 WebLaunch Local. High-End Web Design for Smart Businesses.</p>
     </footer>
 </body>
