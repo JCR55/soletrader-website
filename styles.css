@@ -1,130 +1,169 @@
-/* Clean, modern style reset */
+/* Modern Agency Design Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    background-color: #f4f7f6;
-    color: #333;
+    background-color: #fafbfc;
+    color: #1a202c;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Header & Navigation Bar */
+/* Premium Header */
 header {
-    background-color: #0b2240; /* Royal Blue/Navy */
-    color: white;
-    padding: 1.5rem 10%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1.2rem 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.025em;
 }
 
 nav a {
-    color: #bdc3c7;
+    color: #475569;
     text-decoration: none;
-    margin-left: 20px;
-    font-weight: 600;
+    margin-left: 24px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
 }
 
 nav a:hover, nav a.active {
-    color: #f39c12; /* Premium Gold/Orange highlight */
+    color: #3b82f6; /* Electric Blue Accent */
 }
 
-/* Main Content Area */
+/* Elegant Hero Section */
 main {
     flex: 1;
-    padding: 3rem 10%;
+    padding: 4rem 8%;
 }
 
 .hero {
     text-align: center;
-    padding: 4rem 1rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+}
+
+.badge {
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1.5rem;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    color: #0b2240;
-    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    color: #0f172a;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 1.5rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.15rem;
+    color: #475569;
+    margin-bottom: 2.5rem;
 }
 
-/* Buttons */
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* High-Converting Buttons */
 .cta-btn {
     display: inline-block;
-    background-color: #f39c12;
+    background-color: #3b82f6;
     color: white;
     padding: 0.8rem 2rem;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.2);
+    transition: background 0.2s;
 }
 
 .cta-btn:hover {
-    background-color: #e67e22;
+    background-color: #2563eb;
 }
 
-/* Form Styling */
-.quote-form {
+.secondary-btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #475569;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    transition: background 0.2s;
+}
+
+.secondary-btn:hover {
+    background-color: #f8fafc;
+}
+
+/* Feature Grid section */
+.features-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1max));
+    gap: 24px;
+    margin-top: 2rem;
+}
+
+.summary-card {
     background: white;
     padding: 2rem;
     border-radius: 8px;
-    max-width: 500px;
-    margin: 2rem auto;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
 }
 
-.quote-form label {
-    display: block;
+.summary-card h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
     margin-bottom: 0.5rem;
-    font-weight: bold;
 }
 
-.quote-form input, .quote-form textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.contact-box {
-    text-align: center;
-    background: #eaf2f8;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
+.summary-card p {
+    color: #64748b;
+    font-size: 0.95rem;
 }
 
 /* Footer */
 footer {
-    background-color: #0b2240;
-    color: white;
+    background-color: #0f172a;
+    color: #94a3b8;
     text-align: center;
-    padding: 1rem;
-    margin-top: auto;
+    padding: 1.5rem;
     font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+}
+
+/* Mobile responsive layout adjustment */
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 15px; text-align: center; }
+    nav a { margin: 0 10px; }
+    .hero h1 { font-size: 2rem; }
+    .hero-actions { flex-direction: column; }
+    .features-summary { grid-template-columns: 1fr; }
 }
