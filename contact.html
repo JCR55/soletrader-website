@@ -3,48 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get a Quote - FastFix Plumbing</title>
+    <title>Get Started | WebLaunch Local</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">🪠 FastFix Plumbing</div>
+        <div class="logo">🚀 WebLaunch Local</div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="benefits.html">Why Choose Us</a>
-            <a href="samples.html">Our Work</a>
-            <a href="contact.html" class="active">Get a Quote</a>
+            <a href="benefits.html">The Benefits</a>
+            <a href="samples.html">Packages</a>
+            <a href="contact.html" class="active">Get Started</a>
         </nav>
     </header>
 
     <main>
-        <section class="content">
-            <h1>Get a Free, No-Obligation Quote</h1>
-            <p>Need an urgent repair or planning an upgrade? Fill out the form below or give us a call directly.</p>
-            
-            <div class="contact-box">
-                <h2>📞 Call Now: 07700 900077</h2>
-                <p>Available 24 hours a day, 7 days a week for emergencies.</p>
-            </div>
-
-            <!-- Netlify automatically handles this form out of the box! -->
-            <form name="contact" method="POST" data-netlify="true" class="quote-form">
-                <label>Your Name:</label>
-                <input type="text" name="name" required placeholder="John Doe">
-                
-                <label>Phone Number:</label>
-                <input type="tel" name="phone" required placeholder="07123 456789">
-                
-                <label>What do you need help with?</label>
-                <textarea name="message" required placeholder="Brief description of the job..."></textarea>
-                
-                <button type="submit" class="cta-btn">Submit Request</button>
-            </form>
+        <section class="hero" style="margin-bottom: 2rem;">
+            <span class="badge">No-Obligation Consultation</span>
+            <h2>Let’s Build Something Great Together</h2>
+            <p>Ready to launch your premium, zero-subscription website? Drop your details below and we’ll get back to you within 24 hours to discuss your project.</p>
         </section>
+
+        <!-- Netlify handles this form flawlessly! -->
+        <form name="agency-contact" method="POST" data-netlify="true" class="quote-form">
+            <label>Your Name:</label>
+            <input type="text" name="name" required placeholder="e.g. John Smith">
+            
+            <label>Business Type:</label>
+            <input type="text" name="business" required placeholder="e.g. Electrician, Landscaper, Cafe">
+            
+            <label>Email Address:</label>
+            <input type="email" name="email" required placeholder="name@example.com">
+            
+            <label>Tell us about your project:</label>
+            <textarea name="message" required placeholder="What are you looking to achieve with your new website?"></textarea>
+            
+            <button type="submit" class="cta-btn" style="width: 100%;">Submit Inquiry</button>
+        </form>
     </main>
 
     <footer>
-        <p>© 2026 FastFix Plumbing. Professional Quality, Local Prices.</p>
+        <p>© 2026 WebLaunch Local. High-End Web Design for Smart Businesses.</p>
     </footer>
 </body>
 </html>
