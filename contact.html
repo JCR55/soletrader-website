@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote - FastFix Plumbing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🪠 FastFix Plumbing</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="benefits.html">Why Choose Us</a>
+            <a href="samples.html">Our Work</a>
+            <a href="contact.html" class="active">Get a Quote</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <h1>Get a Free, No-Obligation Quote</h1>
+            <p>Need an urgent repair or planning an upgrade? Fill out the form below or give us a call directly.</p>
+            
+            <div class="contact-box">
+                <h2>📞 Call Now: 07700 900077</h2>
+                <p>Available 24 hours a day, 7 days a week for emergencies.</p>
+            </div>
+
+            <!-- Netlify automatically handles this form out of the box! -->
+            <form name="contact" method="POST" data-netlify="true" class="quote-form">
+                <label>Your Name:</label>
+                <input type="text" name="name" required placeholder="John Doe">
+                
+                <label>Phone Number:</label>
+                <input type="tel" name="phone" required placeholder="07123 456789">
+                
+                <label>What do you need help with?</label>
+                <textarea name="message" required placeholder="Brief description of the job..."></textarea>
+                
+                <button type="submit" class="cta-btn">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 FastFix Plumbing. Professional Quality, Local Prices.</p>
+    </footer>
+</body>
+</html>
